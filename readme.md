@@ -14,9 +14,11 @@ Test what will happen in the following scenario:
 
 Hence we have the following branch figure at the github repo:
 
+```
 main:        `39e92eac` --> `78a32b6`
                  |
 test_branch: `79bee5f`
+```
 
 At this moment, if I want to update my `test_branch` with the latest development from `main` branch without adding too many merge commits, I can use the `rebase` option.
 
@@ -24,9 +26,11 @@ __Note:__ just keep in mind, `rebase` is not moving your `79bee5f` in the `test_
 
 And the result is:
 
+```
 main:        `39e92eac` --> `78a32b6`
                                 |
 test_branch: {`79bee5f`}    `d89c4d9d`
+```
 
 Therefore the `test_branch` history has been changed from:
 
